@@ -1,6 +1,6 @@
 # [CineSearch]
 
-[Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.]
+[CineSearch é um site projetado para simplificar a busca de filmes.]
 
 ## Alunos integrantes da equipe
 
