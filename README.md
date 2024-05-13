@@ -11,8 +11,8 @@
 * Túlio Furst Akar
 ## Professores responsáveis
 
-* [Nome completo do professor 1]
-* [Nome completo do professor 2]
+* Daniel de Oliveira Capanema
+* Rommel Vieira Carneiro
 
 ## Instruções de utilização
 
