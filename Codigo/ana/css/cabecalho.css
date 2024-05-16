@@ -5,50 +5,44 @@
   align-items: center;
 }
 
-.cabecalho__titulo {
-  font-size: 45px; /* Ajuste o tamanho conforme necessário */
-}
-
+/* Estilos para o lado direito do cabeçalho */
 .topo-direito {
   display: flex;
   align-items: center;
 }
 
-.sublogin {
-  position: relative; /* Para posicionar o conteúdo do login absolutamente */
+.user {
+  margin-right: 20px;
+  margin-left: 1050px;
+}
+
+/* Estilos para o ícone do usuário */
+.user a {
+  color: white; /* Define a cor do ícone como branco */
 }
 
 .subloginbtn {
-  background-color: #333; /* Ajuste a cor conforme necessário */
-  color: #fff; /* Ajuste a cor do texto conforme necessário */
+  background-color: #333; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
   border: none;
-  padding: 10px 20px; /* Ajuste o padding conforme necessário */
-  border-radius: 5px; /* Ajuste o raio conforme necessário */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Arredondamento das bordas do botão */
   cursor: pointer;
 }
 
+/* Estilos para o conteúdo do login/assinatura */
 .sublogin-conteudo {
   position: absolute;
   top: 100%; /* Posiciona o conteúdo abaixo do botão */
   right: 0; /* Alinha o conteúdo à direita */
-  background-color: #f9f9f9; /* Ajuste a cor conforme necessário */
-  padding: 10px; /* Ajuste o padding conforme necessário */
-  border-radius: 5px; /* Ajuste o raio conforme necessário */
+  background-color: #f9f9f9; /* Cor de fundo do conteúdo */
+  padding: 10px; /* Espaçamento interno do conteúdo */
+  border-radius: 5px; /* Arredondamento das bordas do conteúdo */
   display: none; /* Inicia oculto */
 }
 
 .sublogin:hover .sublogin-conteudo {
-  display: block; /* Exibe ao passar o mouse */
-}
-
-/* Ajustes para alinhar o título e a área de login/assinatura */
-.cabecalho__titulo {
-  flex: 1; /* Ocupa o espaço disponível */
-  text-align: left; /* Alinha o texto à esquerda */
-}
-
-.topo-direito {
-  margin-left: auto; /* Empurra para a direita */
+  display: block; /* Exibe ao passar o mouse sobre o botão */
 }
 
 /* Estilos para a área de pesquisa no cabeçalho */
