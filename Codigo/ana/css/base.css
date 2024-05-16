@@ -1,0 +1,30 @@
+:root {
+  --bg-color: #3a3b3c;
+  --branco: #ffffff;
+  --favorite-color: #ba0707;
+  --avaliacao-color: #d7a82f;
+  --card-color: #1d1c3b;
+  --light-blue: #706ea8;
+  --light-gray: #acacac;
+  --dark-gray: #8a8a8a;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+
+  background: var(--bg-color);
+  padding: 2% 6%;
+
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: normal;
+  color: var(--branco);
+}
+
+#filmes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}

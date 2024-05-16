@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineSearch</title>
+    <link rel="stylesheet" href="css/cabecalho.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1 class="cabecalho__titulo">CineSearch <a href="inicio.html"></a></h1>
+
+  
+      <!-- início topo direito -->
+      <div class="topo-direito">
+        <!-- área de login -->
+        <div class="sublogin">
+          <div>
+            <button class="subloginbtn">Fazer Login<br>ou Assinar <span class="fa fa-caret-down"></span></button>
+          </div>
+          <div class="sublogin-conteudo">
+            <button type="button" title="Entrar">Entrar</button>
+            <p>ou</p>
+            <button type="button" title="Assinar">Assinar</button>
+          </div>
+        </div>
+        <!-- fim área de login -->
+      </div>
+      <!-- fim topo direito -->
+
+  </div>
+  <!-- fim do topo -->
+    </header>
+
+    <div class="cabecalho__pesquisa">
+      <input
+        type="text"
+        class="cabecalho__pesquisa-input"
+        placeholder="Digite algum filme para pesquisar..."
+      />
+      <span class="cabecalho__pesquisa-lupa">
+        <img src="img/search-icon.svg" alt="" />
+      </span>
+    </div>
+    <label class="cabecalho__checkbox">
+      <input type="checkbox" id="cabecalho__checkbox" />
+      Mostrar meus filmes favoritos apenas
+    </label>
+
+    <main id="filmes">
+      <div class="grid-container">
+        <!-- Os filmes serão inseridos aqui pelo JavaScript -->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 CineSearch. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/filtro.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+/* Estilos para o cabeçalho */
+.cabecalho {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens para os lados */
+  align-items: center;
+}
+
+.cabecalho__titulo {
+  font-size: 24px; /* Ajuste o tamanho conforme necessário */
+}
+
+.topo-direito {
+  display: flex;
+  align-items: center;
+}
+
+.sublogin {
+  position: relative; /* Para posicionar o conteúdo do login absolutamente */
+}
+
+.subloginbtn {
+  background-color: #333; /* Ajuste a cor conforme necessário */
+  color: #fff; /* Ajuste a cor do texto conforme necessário */
+  border: none;
+  padding: 10px 20px; /* Ajuste o padding conforme necessário */
+  border-radius: 5px; /* Ajuste o raio conforme necessário */
+  cursor: pointer;
+}
+
+.sublogin-conteudo {
+  position: absolute;
+  top: 100%; /* Posiciona o conteúdo abaixo do botão */
+  right: 0; /* Alinha o conteúdo à direita */
+  background-color: #f9f9f9; /* Ajuste a cor conforme necessário */
+  padding: 10px; /* Ajuste o padding conforme necessário */
+  border-radius: 5px; /* Ajuste o raio conforme necessário */
+  display: none; /* Inicia oculto */
+}
+
+.sublogin:hover .sublogin-conteudo {
+  display: block; /* Exibe ao passar o mouse */
+}
+
+/* Ajustes para alinhar o título e a área de login/assinatura */
+.cabecalho__titulo {
+  flex: 1; /* Ocupa o espaço disponível */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.topo-direito {
+  margin-left: auto; /* Empurra para a direita */
+}
+
+/* Estilos para a área de pesquisa no cabeçalho */
+.cabecalho__pesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: auto; /* Alterado para ajustar automaticamente ao conteúdo */
+  max-width: 70%; /* Defina o máximo desejado */
+  padding: 16px; /* Ajuste conforme necessário */
+  border-radius: 8px;
+  opacity: 0.25;
+  background: #fff;
+  margin-top: 24px; /* Ajuste conforme necessário */
+  margin-bottom: 20px; /* Ajuste conforme necessário */
+}
+
+.cabecalho__pesquisa-input {
+  width: calc(100% - 32px); /* Ajuste o tamanho do campo de pesquisa */
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: var(--dark-gray);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+}
+
+.cabecalho__pesquisa-input:focus {
+  outline: none;
+}
+
+.cabecalho__pesquisa-lupa {
+  width: 18.35px;
+  height: 19.35px;
+  flex-shrink: 0;
+  cursor: pointer;
+  pointer-events: pointer;
+}
