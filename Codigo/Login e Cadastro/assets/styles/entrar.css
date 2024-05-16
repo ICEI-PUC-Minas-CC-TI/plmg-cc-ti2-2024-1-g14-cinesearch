@@ -177,3 +177,16 @@ body::before {
     border: none;
     margin-bottom: 25px;
 }
+
+/* Estilos para o footer */
+footer {
+
+
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Estilos para o texto de copyright */
+  .copyright {
+    font-size: 14px;
+  }
