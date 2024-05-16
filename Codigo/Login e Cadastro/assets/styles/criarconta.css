@@ -112,9 +112,13 @@ footer {
     padding: 10px 0;
     margin-top: 50px;
   }
+
+  footer p{
+    color: white;
+  }
+  
   
   /* Estilos para o texto de copyright */
   .copyright {
     font-size: 14px;
-    color: white;
   }
