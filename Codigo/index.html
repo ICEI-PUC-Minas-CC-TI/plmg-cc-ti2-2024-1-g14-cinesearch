@@ -19,9 +19,10 @@
   </head>
   <body>
     <header class="cabecalho">
-      <h1 class="cabecalho__titulo">CineSearch</h1>
-      
-      
+      <h1 class="cabecalho__titulo">
+        <a href="ana/inicio.html">CineSearch</a>
+      </h1>
+
       <div class="cabecalho__pesquisa">
         <input
           type="text"
@@ -32,19 +33,17 @@
           <img src="img/search-icon.svg" alt="" />
         </span>
       </div>
-      
-      
-      
 
       <label class="cabecalho__checkbox">
-        <input type="checkbox" id="cabecalho__checkbox"/>
+        <input type="checkbox" id="cabecalho__checkbox" />
         Mostrar meus filmes favoritos apenas
       </label>
     </header>
 
-    <section id="filmes">
+    <section id="filmes"></section>
+    <section class="card__lista-vazia">
+      Você ainda não adicionou nenhum filme a sua lista de favoritos!
     </section>
-    <section class="card__lista-vazia">Você ainda não adicionou nenhum filme a sua lista de favoritos!</section>
     <!--
         <section class="cards">
 
@@ -77,9 +76,7 @@
     </section>
 -->
     <footer>
-        <div class="copyright">
-            &copy; 2024 CineSearch
-        </div>
+      <div class="copyright">&copy; 2024 CineSearch</div>
     </footer>
 
     <script src="js/script.js" type="module"></script>
