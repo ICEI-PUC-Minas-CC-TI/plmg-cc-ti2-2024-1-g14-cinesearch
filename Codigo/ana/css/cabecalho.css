@@ -6,7 +6,7 @@
 }
 
 .cabecalho__titulo {
-  font-size: 24px; /* Ajuste o tamanho conforme necessário */
+  font-size: 45px; /* Ajuste o tamanho conforme necessário */
 }
 
 .topo-direito {
@@ -57,18 +57,20 @@
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
-  width: auto; /* Alterado para ajustar automaticamente ao conteúdo */
-  max-width: 70%; /* Defina o máximo desejado */
-  padding: 16px; /* Ajuste conforme necessário */
+
+  width: 634px;
+  padding: 26px 30px 26px 24px;
+
   border-radius: 8px;
   opacity: 0.25;
   background: #fff;
-  margin-top: 24px; /* Ajuste conforme necessário */
-  margin-bottom: 20px; /* Ajuste conforme necessário */
+
+  margin-top: 48px;
+  margin-bottom: 30px;
 }
 
 .cabecalho__pesquisa-input {
-  width: calc(100% - 32px); /* Ajuste o tamanho do campo de pesquisa */
+  width: 95%;
   height: 100%;
   border: none;
   background: transparent;
