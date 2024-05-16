@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.cabecalho__titulo {
+  font-size: 50px;
+}
+
 .user {
   margin-right: 20px;
   margin-left: 1050px;
@@ -28,6 +32,7 @@
   padding: 10px 20px; /* Espaçamento interno do botão */
   border-radius: 5px; /* Arredondamento das bordas do botão */
   cursor: pointer;
+  font-size: 18px;
 }
 
 /* Estilos para o conteúdo do login/assinatura */
