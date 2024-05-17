@@ -6,7 +6,6 @@
 
 * Ana Carolina Couto Machado
 * Felipe Carvalho de Paula Silva
-* Pedro Henrique Magno Gonçalves
 * Rafael Lima Mendonça Garcia
 * Túlio Furst Akar
 ## Professores responsáveis
