@@ -12,4 +12,14 @@ body {
   background-attachment: fixed;
   font-family: 'PT Sans', sans-serif;
   line-height: 100%;
+  
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #3a3b3c; /* Optional: for better visibility */
+  padding: 10px; /* Optional: for better spacing */
+}
+
