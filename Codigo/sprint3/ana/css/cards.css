@@ -1,0 +1,131 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1224px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #18191a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cards__parte1 {
+  width: 180px; /* Largura da imagem */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.cards__parte1-capa {
+  width: 180px;
+  /*max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+  height: auto; /* Permite que a altura se ajuste automaticamente */
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.779);
+}
+
+.cards__parte2 {
+  display: flex;
+  flex-direction: column; /* Altera a direção do layout para coluna */
+  gap: 24px;
+}
+
+.cards__parte2-titulo {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center; /* Centraliza o texto */
+}
+
+.cards__parte2-details {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-top: auto; /* Move o conteúdo para a parte inferior */
+}
+
+.cards__parte2-details div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cards__parte2-checkbox {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 4px;
+  background: url(../img/Heart.svg) no-repeat center / 80%;
+  outline: none;
+  cursor: pointer;
+}
+
+.cards__parte2-checkbox:checked {
+  background: url(../img/heart-full.svg) no-repeat center / 80%;
+}
+
+.cards__parte2-favoritar {
+  font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+  margin-left: 5px; /* Adicione um pequeno espaço à esquerda */
+}
+
+@media screen and (max-width: 1024px) {
+  .cards__parte1,
+  .cards__parte2,
+  .cards__parte3 {
+    width: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards__parte1,
+  .cards__parte2,
+  .cards__parte3 {
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}
+
+.rating-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+.review-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+/* Estilos para o botão de exclusão */
+.delete-review {
+  margin-top: 10px;
+  padding: 10px 20px; /* Aumenta o tamanho do botão */
+  background-color: #ff4d4d; /* Cor de fundo vermelho */
+  color: #000; /* Cor da letra preta */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  font-weight: bold; /* Deixa a letra em negrito */
+  transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+.delete-review:hover {
+  background-color: #e60000; /* Cor de fundo vermelho escuro ao passar o mouse */
+}
+
+.no-color-change {
+  color: inherit !important;
+  text-decoration: none !important;
+}

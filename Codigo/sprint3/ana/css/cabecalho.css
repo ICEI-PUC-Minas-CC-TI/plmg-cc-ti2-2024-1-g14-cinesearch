@@ -1,0 +1,93 @@
+/* Estilos para o cabeçalho */
+.cabecalho {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens para os lados */
+  align-items: center;
+}
+
+/* Estilos para o lado direito do cabeçalho */
+.topo-direito {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho__titulo {
+  font-size: 50px;
+}
+
+.user {
+  margin-right: 20px;
+  margin-left: 1050px;
+}
+
+/* Estilos para o ícone do usuário */
+.user a {
+  color: white; /* Define a cor do ícone como branco */
+}
+
+.subloginbtn {
+  background-color: #333; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none;
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Arredondamento das bordas do botão */
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Estilos para o conteúdo do login/assinatura */
+.sublogin-conteudo {
+  position: absolute;
+  top: 100%; /* Posiciona o conteúdo abaixo do botão */
+  right: 0; /* Alinha o conteúdo à direita */
+  background-color: #f9f9f9; /* Cor de fundo do conteúdo */
+  padding: 10px; /* Espaçamento interno do conteúdo */
+  border-radius: 5px; /* Arredondamento das bordas do conteúdo */
+  display: none; /* Inicia oculto */
+}
+
+.sublogin:hover .sublogin-conteudo {
+  display: block; /* Exibe ao passar o mouse sobre o botão */
+}
+
+/* Estilos para a área de pesquisa no cabeçalho */
+.cabecalho__pesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+
+  width: 634px;
+  padding: 26px 30px 26px 24px;
+
+  border-radius: 8px;
+  opacity: 0.25;
+  background: #fff;
+
+  margin-top: 48px;
+  margin-bottom: 30px;
+}
+
+.cabecalho__pesquisa-input {
+  width: 95%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: var(--dark-gray);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+}
+
+.cabecalho__pesquisa-input:focus {
+  outline: none;
+}
+
+.cabecalho__pesquisa-lupa {
+  width: 18.35px;
+  height: 19.35px;
+  flex-shrink: 0;
+  cursor: pointer;
+  pointer-events: pointer;
+}
