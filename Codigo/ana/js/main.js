@@ -95,6 +95,46 @@ function InserirFilmesNaTela(filmes) {
     parte3.appendChild(texto);
     parte3.style.display = 'none'; // Ocultar o resumo inicialmente
 
+    // Avaliação
+    const ratingInput = document.createElement('input');
+    ratingInput.type = 'number';
+    ratingInput.min = '1';
+    ratingInput.max = '5';
+    ratingInput.step = '1';
+    ratingInput.placeholder = 'Avaliar (1-5)';
+    ratingInput.className = 'rating-input';
+    parte2.appendChild(ratingInput);
+
+    const reviewInput = document.createElement('textarea');
+    reviewInput.placeholder = 'Escreva uma revisão';
+    reviewInput.className = 'review-input';
+    parte2.appendChild(reviewInput);
+
+    const button = document.createElement('button');
+    button.textContent = 'Avaliar Filme';
+    parte2.appendChild(button);
+
+    button.addEventListener('click', () => {
+      const rating = ratingInput.value;
+      const review = reviewInput.value;
+      const movieId = section.dataset.movieId;
+
+      const movieReview = {
+        movieId,
+        movieName: title,
+        posterUrl: posterPath,
+        rating,
+        review,
+      };
+      const storedReviews = localStorage.getItem('movieReviews');
+      const reviews = storedReviews ? JSON.parse(storedReviews) : [];
+      reviews.push(movieReview);
+      localStorage.setItem('movieReviews', JSON.stringify(reviews));
+
+      ratingInput.value = '';
+      reviewInput.value = '';
+    });
+
     parte2.addEventListener('click', () => {
       if (parte3.style.display === 'none') {
         parte3.style.display = 'block';
