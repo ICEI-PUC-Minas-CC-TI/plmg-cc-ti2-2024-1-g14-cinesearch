@@ -1,6 +1,6 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: Cinesearch
 authors:
   - family-names: Couto Machado
     given-names: Ana Carolina
@@ -23,9 +23,12 @@ authors:
     family-names: Vieira Carneiro
     given-names: Rommel
 keywords:
-  - 
-  - 
-repository-code: 
+  - frontend 
+  - javascript
+  - TMDB
+  - movies 
+  - database
+repository-code: https://github.com/ICEI-PUC-Minas-CC-TI/plmg-cc-ti2-2024-1-g14-cinesearch
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2022-07-14
