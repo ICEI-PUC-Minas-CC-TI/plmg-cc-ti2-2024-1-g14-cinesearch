@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinesearch - Avaliações</title>
     <link rel="stylesheet" href="avaliacoes.css">
+    <style>
+        .star {
+            font-size: 2rem;
+            cursor: pointer;
+            color: gray;
+        }
+        .star.selected {
+            color: gold;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,7 +38,14 @@
         </div>
         <form id="avaliacao-form">
             <h2>Adicionar Avaliação</h2>
-            <input type="number" id="avaliacao-nota" placeholder="Nota (0-5)" required />
+            <div id="avaliacao-estrelas">
+                <span class="star" data-value="1">☆</span>
+                <span class="star" data-value="2">☆</span>
+                <span class="star" data-value="3">☆</span>
+                <span class="star" data-value="4">☆</span>
+                <span class="star" data-value="5">☆</span>
+            </div>
+            <input type="hidden" id="avaliacao-nota" name="avaliacao-nota" value="0">
             <textarea id="avaliacao-comentario" placeholder="Comentário" required></textarea>
             <button type="submit">Enviar Avaliação</button>
         </form>

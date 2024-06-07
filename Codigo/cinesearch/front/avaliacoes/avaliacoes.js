@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
     loadFilmes();
     document.getElementById('filme-select').addEventListener('change', loadAvaliacoes);
     document.getElementById('avaliacao-form').addEventListener('submit', enviarAvaliacao);
+    
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
+            const value = parseInt(star.getAttribute('data-value'));
+            document.getElementById('avaliacao-nota').value = value;
+            updateStars(value);
+        });
+    });
 });
 
 function loadFilmes() {
@@ -99,4 +108,16 @@ function getStars(nota) {
         }
     }
     return stars;
+}
+
+function updateStars(value) {
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => {
+        const starValue = parseInt(star.getAttribute('data-value'));
+        if (starValue <= value) {
+            star.classList.add('selected');
+        } else {
+            star.classList.remove('selected');
+        }
+    });
 }
