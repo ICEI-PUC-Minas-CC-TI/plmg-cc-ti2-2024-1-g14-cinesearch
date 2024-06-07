@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinesearch - Avaliações</title>
+    <link rel="stylesheet" href="avaliacoes.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../paginainicial/principal.html">Cinesearch</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../paginainicial/principal.html">Home</a></li>
+                <li><a href="../perfil/perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="avaliacoes-content">
+            <h1>Avaliações de Filmes</h1>
+            <select id="filme-select">
+                <option value="">Selecione um filme</option>
+            </select>
+            <div id="avaliacoes-container" class="avaliacoes-container"></div>
+        </div>
+        <form id="avaliacao-form">
+            <h2>Adicionar Avaliação</h2>
+            <input type="number" id="avaliacao-nota" placeholder="Nota (0-5)" required />
+            <textarea id="avaliacao-comentario" placeholder="Comentário" required></textarea>
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cinesearch. Todos os direitos reservados.</p>
+    </footer>
+    <script src="avaliacoes.js"></script>
+</body>
+</html>

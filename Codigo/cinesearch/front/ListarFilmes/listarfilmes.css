@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f6f5f7;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    background-color: #ff4b2b;
+    color: #ffffff;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ff4b2b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    flex: 1;
+    overflow-y: auto; /* Permite que o conteúdo principal seja rolado */
+    margin-top: 60px; /* Espaço para o header */
+    margin-bottom: 40px; /* Espaço para o footer */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
+                0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 1200px;
+    min-height: calc(100vh - 120px); /* Ajustado para a altura do header e footer */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Centraliza o container */
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    background-color: #ff4b2b;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.content-container {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a lista horizontalmente */
+}
+
+.filmes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza a lista horizontalmente */
+    overflow-y: auto; /* Permite que a lista de filmes seja rolada */
+    max-height: calc(100vh - 240px); /* Ajusta a altura máxima para a lista de filmes */
+    width: 100%; /* Garante que a lista ocupe toda a largura do container */
+}
+
+.filme-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filme-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.filme-card h3 {
+    margin: 10px 0 5px;
+}
+
+.filme-card p {
+    margin: 5px 0;
+}
+
+.filme-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
