@@ -2,26 +2,26 @@ cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title: 
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Couto Machado
+    given-names: Ana Carolina
+  - family-names: Carvalho de Paula Silva
+    given-names: Felipe
+  - family-names: Lima Mendonça Garcia
+    given-names: Rafael
+  - family-names: Furst Akar
+    given-names: Túlio
+  - family-names: de Oliveira Capanema
+    given-names: Daniel
+  - family-names: Vieira Carneiro
+    given-names: Rommel
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: de Oliveira Capanema
+    given-names: Daniel
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Vieira Carneiro
+    given-names: Rommel
 keywords:
   - 
   - 
