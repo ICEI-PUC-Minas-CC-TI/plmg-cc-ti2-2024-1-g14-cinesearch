@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinesearch - Avaliações</title>
+    <link rel="stylesheet" href="avaliacoes.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../paginainicial/principal.html">Cinesearch</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../paginainicial/principal.html">Home</a></li>
+                <li id="login-status"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="avaliacoes-content">
+            <h1>Avaliações de Filmes</h1>
+            <input type="text" id="search-bar" placeholder="Buscar filme...">
+            <div id="filmes" class="filmes-grid"></div>
+            <div class="pagination">
+                <button id="prev-page" disabled>Anterior</button>
+                <button id="next-page" disabled>Próxima</button>
+            </div>
+        </div>
+    </main>
+    <div id="avaliacao-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Adicionar Avaliação</h2>
+            <div class="rating">
+                <span class="star" data-value="1">☆</span>
+                <span class="star" data-value="2">☆</span>
+                <span class="star" data-value="3">☆</span>
+                <span class="star" data-value="4">☆</span>
+                <span class="star" data-value="5">☆</span>
+            </div>
+            <textarea id="avaliacao-comentario" placeholder="Comentário" required></textarea>
+            <button id="avaliacao-submit">Enviar Avaliação</button>
+        </div>
+    </div>
+    <div id="ver-avaliacoes-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Avaliações</h2>
+            <div id="avaliacoes-container"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cinesearch. Todos os direitos reservados.</p>
+    </footer>
+    <script src="avaliacoes.js"></script>
+</body>
+</html>

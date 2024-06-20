@@ -1,0 +1,236 @@
+/* CSS Import */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f6f5f7;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content Styling */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px; /* Margin to prevent content from being hidden behind the fixed header */
+}
+
+/* Heading and Paragraph Styling */
+h1 {
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ff416c;
+}
+
+p {
+    margin: 20px 0;
+}
+
+/* Hero Section Styling */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    text-align: center;
+}
+
+.column-left h1 {
+    font-size: 2.5rem;
+}
+
+.column-left p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Input and Image Preview Styling */
+input[type="file"] {
+    display: none;
+}
+
+.image-preview {
+    display: none; /* Hide image preview initially */
+    margin: 20px 0;
+    max-width: 300px;
+    max-height: 300px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+/* Button Styling */
+.button-wrapper {
+    position: relative;
+}
+
+.button-wrapper label {
+    background: #ff416c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    transition: background 0.3s;
+}
+
+.button-wrapper label:hover {
+    background: #ff4b2b;
+}
+
+button {
+    background: #ff416c;
+    color: white;
+    padding: 10px 20px;
+    border: none; /* Remove border */
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff4b2b;
+}
+
+/* Loading and Result Container Styling */
+.loading {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #ff4b2b;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.result-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgba(255, 199, 199, 0.9);
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 30px;
+  }
+
+  .column-left, .result-container {
+      width: 100%;
+  }
+
+  .column-left {
+      margin-bottom: 20px;
+  }
+}
+
+/* Login Status Styling */
+#login-status a {
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#login-status a:hover {
+    text-decoration: underline;
+}

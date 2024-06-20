@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa por IA - Cinesearch</title>
+    <link rel="stylesheet" href="ia.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../paginainicial/principal.html">Cinesearch</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../paginainicial/principal.html">Home</a></li>
+                <li id="login-status"></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content-container">
+        <section class="hero">
+            <div class="hero-container">
+                <div class="column-left">
+                    <h1>Pesquisa por IA</h1>
+                    <p>Procure por filmes usando nossa IA que analisa imagens!</p>
+                    <div class="image-preview" id="imagePreview">
+                        <img id="previewImg" src="" alt="Imagem selecionada">
+                    </div>
+                    <div class="button-wrapper" id="chooseImageWrapper">
+                        <label for="imageUpload">Escolher Imagem</label>
+                        <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)">
+                    </div>
+                    <button id="identifyButton" style="display: none;" onclick="identifyMovie()">Identificar Filme</button>
+                    <div id="loading" class="loading">
+                        <div class="loader"></div>
+                        <p>Identificando...</p>
+                    </div>
+                </div>
+                <div id="resultContainer" class="result-container">
+                    <div id="result" class="result"></div>
+                    <button id="newImageButton" style="display: none;" onclick="reset()">Identificar Nova Imagem</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cinesearch. Todos os direitos reservados.</p>
+    </footer>
+    <script src="ia.js"></script>
+</body>
+</html>

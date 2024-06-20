@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinesearch - Perfil do Usuário</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../paginainicial/principal.html">Cinesearch</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../paginainicial/principal.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content-container">
+                <h1>Perfil do Usuário</h1>
+                <form id="perfil-form">
+                    <input type="text" id="perfil-usuario" placeholder="Nome de Usuário" required />
+                    <input type="email" id="perfil-email" placeholder="Email" required />
+                    <input type="password" id="perfil-senha" placeholder="Senha" required />
+                    <button type="submit">Atualizar Informações</button>
+                </form>
+                <div class="button-container">
+                    <button id="logout" class="logout-btn">Logout</button>
+                    <button id="delete-account" class="delete-btn">Deletar Conta</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cinesearch. Todos os direitos reservados.</p>
+    </footer>
+    <script src="perfil.js"></script>
+</body>
+</html>
