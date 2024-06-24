@@ -28,6 +28,9 @@ keywords:
   - TMDB
   - movies 
   - database
+  - java
+  - azure
+  - custom vision
 repository-code: https://github.com/ICEI-PUC-Minas-CC-TI/plmg-cc-ti2-2024-1-g14-cinesearch
 license: CC-BY-4.0
 version: 1.0.0
